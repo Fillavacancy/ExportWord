@@ -25,9 +25,9 @@ public class OpenOfficeConnectionPool {
     private LinkedList<OpenOfficeConnection> connectionPool = new LinkedList<OpenOfficeConnection>();
 
     //构造函数  初始化连接
-    public OpenOfficeConnectionPool() {
-        //初始化3个连接
-        for (int i = 0; i < 3; i++) {
+    public OpenOfficeConnectionPool(int initCount) {
+        //初始化initCount个连接
+        for (int i = 0; i < initCount; i++) {
             connectionPool.add(createConnection());
         }
     }
@@ -85,7 +85,7 @@ public class OpenOfficeConnectionPool {
     }
 
     public static void main(String[] args) {
-        OpenOfficeConnectionPool pool = new OpenOfficeConnectionPool();
+        OpenOfficeConnectionPool pool = new OpenOfficeConnectionPool(3);
 
         OpenOfficeConnection conn1 = pool.getConnection();
         OpenOfficeConnection conn2 = pool.getConnection();

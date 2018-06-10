@@ -15,7 +15,7 @@ import java.net.ConnectException;
  * @description:
  **/
 public class OfficeToPDF {
-    private static OpenOfficeConnectionPool pool = new OpenOfficeConnectionPool();
+    private static OpenOfficeConnectionPool pool = new OpenOfficeConnectionPool(3);
 
     /**
      * @param sourceFile 源文件, 绝对路径. 可以是Office2003-2007全部格式的文档, Office2010的没测试. 包括.doc,
