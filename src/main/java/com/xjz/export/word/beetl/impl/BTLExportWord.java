@@ -23,7 +23,7 @@ public class BTLExportWord implements IExportWord {
         ClasspathResourceLoader resourceLoader = new ClasspathResourceLoader(ConstConstant.TEMPLATE_PACK);
         Configuration config = Configuration.defaultConfiguration();
         GroupTemplate groupTemplate = new GroupTemplate(resourceLoader, config);
-        Template template = groupTemplate.getTemplate(ConstConstant.BTL_HTMB_DEMO);
+        Template template = groupTemplate.getTemplate(ConstConstant.BTL_HTMB_DOC);
         t = template;
         return template;
     }

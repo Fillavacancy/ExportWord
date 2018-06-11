@@ -27,7 +27,7 @@ public class FTLExportWord implements IExportWord {
 
     private Template createTemplate() throws IOException {
         Configuration configuration = createConfig();
-        Template template = configuration.getTemplate(ConstConstant.BTL_HTMB_DEMO);
+        Template template = configuration.getTemplate(ConstConstant.BTL_HTMB_DOC);
         t = template;
         return t;
     }

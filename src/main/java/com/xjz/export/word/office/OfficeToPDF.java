@@ -63,7 +63,7 @@ public class OfficeToPDF {
 
     public static void main(String[] args) {
         try {
-            System.out.println(office2PDF("C:\\Users\\Gibbons\\Desktop\\合同模板.doc", "C:\\Users\\Gibbons\\Desktop\\合同模板.pdf"));
+            System.out.println(office2PDF("C:\\Users\\Gibbons\\Desktop\\合同模板1.doc", "C:\\Users\\Gibbons\\Desktop\\合同模板.pdf"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

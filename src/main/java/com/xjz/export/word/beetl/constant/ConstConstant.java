@@ -7,5 +7,6 @@ package com.xjz.export.word.beetl.constant;
  **/
 public class ConstConstant {
     public final static String TEMPLATE_PACK = "/com/xjz/export/word/beetl/template";
-    public final static String BTL_HTMB_DEMO = "/htmb.btl";
+    public final static String BTL_HTMB_DOC = "/htmb(07doc).btl";
+    public final static String BTL_HTMB_DOCX = "/htmb(07docx).btl";
 }
